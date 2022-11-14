@@ -1,0 +1,171 @@
+<!DOCTYPE html>  <!--TAG--> <!--bu dosya bir html dosyası diyoruz-->
+<html lang="en">  <!--TAG başlangıcı-->  <!--dili ingilizce diyoruz-->
+<head>   <!--bu kısım baslik kısmı-->
+    <meta charset="UTF-8">  <!--karakter kodunu veriyor-->
+    <title> Ilk Web Sayfasi</title> <!--bu  baslik-->
+    <link rel="stylesheet" href="style/main.css" 
+    <!--arka palanı renklerndirme-->
+     <style> 
+       
+        table,th,td {
+        border:3px insert rgb(255,4 ,4,0.878);
+    }
+    a{
+        font-size:xx-large
+    }
+    li{
+        background-color: rgb(221, 255, 0);
+        
+    }
+        </style>
+</head>
+<body>  <!--esas yazımızın oldugu kısım  2 body arası-->
+
+    
+  
+    <!--resim ekleme   width ="yukseklik", height="genişlik" -->
+    <img src="resimler/kahve2.jpg" alt="Bir kahve resmi" width="50%",> 
+
+
+    <!-- burası yorum yeri-->
+<h1> Ilk cumlemiz bu olsun.</h1> <!--bu baslik  h1 den h6 ya kadar buyukluk var-->
+<h2> Ilk cumlemiz bu olsun.</h2> <!--bu  baslik  buyukten kucuge sıralanmıs hali-->
+<h3> Ilk cumlemiz bu olsun.</h3>
+<h4> Ilk cumlemiz bu olsun.</h4>
+<h5> Ilk cumlemiz bu olsun.</h5>
+<h6> Ilk cumlemiz bu olsun.</h6>
+
+<!--p paragraf demek. paragraf TAGı-->
+<p>Bugun <strong><em>8 Kasim 2022</em></strong>.Gunlerden <u> sali.</u> <em><i>Mevsim sonbahar</i></em>. Hava soguk.</p><br>
+
+<!--<br> </br> koyu yazar--> <!--<strong> </strong> aynı işlemi yapar, daha çok bu kullanılır-->
+<!--<i> </i>   eğik yazar-->  <!--<m> </m> aynı işlemi yapar, daha çok bu kullanılır-->
+<!--<sub> </sub> H2O yazarken 2yi biraz aşağıda yazdırır-->
+<!--<sup> </sup> 2üzeri2 yazarken 2yi biraz yukarıda yazdırır-->
+<!--<strike> </strike> yazının üzerini çizer-->
+<!-- <u> </u> yazının altını çizer-->
+<!--<big> </big> cümlede biraz buyuk  yazdırır-->
+<!-- yorum yapılan kısım comment denir-->
+<!--<p> </p>  bir satırdır-->
+<!-- a href= " link yazılır"-->
+<!-- ul liste yapılır,Unorder List, sirasiz liste-->
+<!-- li liste yapılırken her bir eleman icin yazılır,list Item. liste elemani-->
+<!-- ol list Item. liste elemani-->
+<!-- dl Definition List, tanınmış liste --> 
+
+
+<br>  <!--boşluk bırakır genelde satır sonlarında konulur-->
+
+<p><strike> Bu ikinci paragraf.</strike> <u>Ilki ile arasinda bosluk birakacak.</u></p>  <!--bu paragraf-->
+
+<p> Bu ucuncu paragraf<big>. Ilki</big> ile arasinda bosluk birakacak.</p>
+
+<p> H<sub>2</sub>O suyun molekulu.</p> <!--2 alta gelir-->
+
+<p>2<sup>2</sup> = 4</p> <!--2 üste gelir-->
+
+<code>Scanner klavye = new Scanner(System.in);</code>
+
+<!-- ses ekler-->
+
+<audio controls autoplay>
+    <source src="sesler/Aleyna Tilki Tanırım İntiharı.mp3"  type=" audio/mpeg"> 
+</audio>
+
+<!-- video ekler-->
+<video width="300" height="250" controls>
+    <source src="videolar/tarkan.mp4" type="video/mp4"> </video>
+
+
+
+
+
+
+<!-- video ekler-->
+<iframe width="400" height="300"
+src=" https://www.youtube.com/watch?v=uNuYNc1SKPk">
+</iframe>
+
+<!-- uste çıkarma-->
+    <h1> Ilk Sayfa </h1>
+    <a href="#haberler"> haberler</a>
+    <a href="#hikayeler"> hikayeler</a>
+    <a href="#sarkılar"> sarkılar</a>
+    <a href="#menu"> menu</a>
+
+<ul>  <!-- Unorder List, sirasiz liste-->
+    
+    <li>  Dolar 18.50 TL oldu </li>  <!--list Item. liste elemani-->
+    <li style="column-rule:rgb(255,4 ,4)"> TOGG banttan indi</li>
+    <li style="column-rule: yellow;"> Pasa kupada cok farkl</li>
+    <li> Bakan Bilgin'den EYT son durum aciklamasi</li>
+</ul>
+
+<h3> Peynirli Yumurta Tarifi</h3>
+<ol>  <!-- list Item. liste elemani, Order List, sirali liste-->
+    <li> Beyaz peyniri eziyoruz ve uygun bir tavanın içerisine eklediğimiz zeytin yağında ocağa alıyoruz.</li>
+    <li id="maviLi"> Peynir karıştırarak erimesini sağlıyoruz..</li>
+    <li id="beyazLi"> Üzerine pul biber ekliyoruz ve karıştırmaya devam ediyoruz.</li>
+    <li>  Yumurtayı bir kaseye kırıyoruz ve çırpıyoruz.</li>
+    <li>  Peynirin üzerine ekleyip ara ara karıştırarak pişiriyoruz.</li>
+    <li>   Tuz atmadan önce peynirinizin tuzlu olup olmadığını kontrol etmeli ve ona göre tuz eklemelisiniz.</li>
+    <li>  Maydanozla süsleyerek servis yapıyoruz. Afiyet olsun…    </li>
+</ol> 
+
+
+    <h1> Ilk sayfa </h1> 
+    <p> Ana sayfa</p>
+
+    <!-- a href= " link yazılır"-->
+    <a href="ikinciSayfa.html"> ikinci sayfa icin tiklayiniz</a>
+
+    <h3 id="Hikayeler"> Hikayeler</h3>
+    <ul> 
+   <li><a href="Hikayeler/Hikaye1.html"> Ti ve Kaplan Hikayesi icin Tıklayınız</a></li>
+   <li><a href="Hikayeler/Hikaye2.html"> Pamuk Prenses Hikayesi icin Tıklayınız</a></li>
+   <li><a href="Hikayeler/Hikaye3.html"> Hansel ve Gratel icin Tıklayınız</a></li>
+   <li><a href="Hikayeler/Hikaye4.html"> Rapunzel Hikayesi icin Tıklayınız</a></li>
+    </ul>
+
+    <h3 id="Sarkı sozleri"> Sarkı Sozleri</h3>
+    <a href="sarkisozleri/sarki1.html"> Mihriban Sarkı Sozleri icin Tıklayınız</a>
+
+    <h3> Odul Adayları</h3>
+    <dl> <!-- Definition List, tanınmış liste --> 
+        <dt> Pop Muzik Adayları</dt>
+        <dd> Hande Yener, Murat Boz, Ibrahim TatliSes, Gulsen</dd>
+        <dt> Yabancı Muzik Adayları</dt>
+        <dd> Beyonce, Rihanna, Maroon 5, Ava Max</dd>
+        <dt> Turku Adayları</dt>
+        <dd> Izzet Altinmese, Ahmet Kaya, Bedia Akarturk</dd>
+    
+    </dl>
+    <table> <!--Tablo-->
+        <tr>  <!--Tablo Row, tablo satiri-->
+            <th> Sirket </th>  <!--Tablo Header , tablo basligi-->
+            <th> Iletisim</th>
+            <th> Sehir</th>
+        
+        </tr> 
+        <tr> 
+            <td> Bellona</td>
+            <td> Ahmet Tasdelen</td>
+            <td> Istanbul</td>
+        </tr>
+        <tr>
+            <td> Alarko Kombi</td>
+            <td> Ilknur Sezer</td>
+            <td> Gaziantep</td>
+        </tr>
+        <tr>
+            <td> Man Kamyon</td>
+            <td> Oguz Ergin</td>
+            <td> Ankara</td>
+        </tr>
+
+
+
+    </table>
+</body>    <!-- satır boslugu bırakır-->
+
+</html> <!-- / TAG kapatıyor-->
