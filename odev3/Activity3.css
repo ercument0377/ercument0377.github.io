@@ -34,7 +34,7 @@ th, td
 	
 }
 
-tbody tr:nth-child(even) td 
+tbody tr:nth-child(odd) td 
 {
-	background-color: yellow;
+	background-color: white;
 }
