@@ -34,7 +34,7 @@ th, td
 	
 }
 
-tbody tr:nth-child(even) td 
+tbody tr:nth-child(:only-child) td 
 {
 	background-color: yellow;
 }
