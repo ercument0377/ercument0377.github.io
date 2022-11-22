@@ -13,6 +13,10 @@ table
 	border: 1px solid black;
 	margin: 20px;
 }
+#TabloBasligi{
+	text-align: center;
+
+}
 
 thead 
 {
