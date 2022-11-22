@@ -19,6 +19,10 @@ table
 	border: 1px solid black;
 	margin: 20px;
 }
+#TabloBasligi{
+	text-align: center;
+
+}
 
 thead 
 {
@@ -36,11 +40,15 @@ th, td
 .right 
 {
 	text-align: right;
-	background-color : white;
+	background-color : yellow;
 	
 }
 
-tbody tr:nth-child(odd) td 
+tbody tr:nth-child(even) td 
 {
 	background-color: yellow;
+}
+tbody tr:nth-child(odd) td 
+{
+	background-color: white;
 }
