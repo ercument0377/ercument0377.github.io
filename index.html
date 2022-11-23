@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="style/main.css" 
     <!--arka palanı renklerndirme-->
      <style> 
-       
         table,th,td {
-        border:3px insert rgb(255,4 ,4,0.878);
+        border: 1px solid rgb(173, 29, 29);
     }
+  
     a{
         font-size:xx-large
     }
@@ -20,12 +20,10 @@
         </style>
 </head>
 <body>  <!--esas yazımızın oldugu kısım  2 body arası-->
+ <header>
 
     
-  
-    <!--resim ekleme   width ="yukseklik", height="genişlik" -->
-    <img src="resimler/kahve2.jpg" alt="Bir kahve resmi" width="50%",> 
-
+ </header>
 
     <!-- burası yorum yeri-->
 <h1> Ilk cumlemiz bu olsun.</h1> <!--bu baslik  h1 den h6 ya kadar buyukluk var-->
@@ -52,6 +50,10 @@
 <!-- li liste yapılırken her bir eleman icin yazılır,list Item. liste elemani-->
 <!-- ol list Item. liste elemani-->
 <!-- dl Definition List, tanınmış liste --> 
+<!-- table  tablo yapıyor-->
+<!-- tr Table Row, tablo satırı-->
+<!-- th table header, tablo başlıgı-->
+
 
 
 <br>  <!--boşluk bırakır genelde satır sonlarında konulur-->
@@ -75,10 +77,6 @@
 <!-- video ekler-->
 <video width="300" height="250" controls>
     <source src="videolar/tarkan.mp4" type="video/mp4"> </video>
-
-
-
-
 
 
 <!-- video ekler-->
@@ -120,12 +118,12 @@ src=" https://www.youtube.com/watch?v=uNuYNc1SKPk">
     <a href="ikinciSayfa.html"> ikinci sayfa icin tiklayiniz</a>
 
     <h3 id="Hikayeler"> Hikayeler</h3>
-    <ul> 
+    <ol> 
    <li><a href="Hikayeler/Hikaye1.html"> Ti ve Kaplan Hikayesi icin Tıklayınız</a></li>
    <li><a href="Hikayeler/Hikaye2.html"> Pamuk Prenses Hikayesi icin Tıklayınız</a></li>
    <li><a href="Hikayeler/Hikaye3.html"> Hansel ve Gratel icin Tıklayınız</a></li>
    <li><a href="Hikayeler/Hikaye4.html"> Rapunzel Hikayesi icin Tıklayınız</a></li>
-    </ul>
+    </ol>
 
     <h3 id="Sarkı sozleri"> Sarkı Sozleri</h3>
     <a href="sarkisozleri/sarki1.html"> Mihriban Sarkı Sozleri icin Tıklayınız</a>
@@ -138,8 +136,18 @@ src=" https://www.youtube.com/watch?v=uNuYNc1SKPk">
         <dd> Beyonce, Rihanna, Maroon 5, Ava Max</dd>
         <dt> Turku Adayları</dt>
         <dd> Izzet Altinmese, Ahmet Kaya, Bedia Akarturk</dd>
+
+        <h3> Menu </h3>
+    <dl> <!-- Definition List, tanınmış liste --> 
+        <dt> Latte</dt>
+        <dd> Sutlu Kremali bol kopuklu kahve</dd>
+        <dt> Mocha </dt>
+        <dd> Sutlu cikolatali espressolu kahve</dd>
+        <dt> Turk Kahvesi </dt>
+        <dd> Bakir Cezvede 2 tasim kaynatilmis sekerli Turk Kahvesi</dd>
     
     </dl>
+
     <table> <!--Tablo-->
         <tr>  <!--Tablo Row, tablo satiri-->
             <th> Sirket </th>  <!--Tablo Header , tablo basligi-->
@@ -162,10 +170,19 @@ src=" https://www.youtube.com/watch?v=uNuYNc1SKPk">
             <td> Oguz Ergin</td>
             <td> Ankara</td>
         </tr>
-
-
+        <tr>
+            <td> Aktas Iletisim</td>
+            <td> Abdullah Seker</td>
+            <td> Ordu </td>
+        </tr>
 
     </table>
+    <div id="impDiv" style="border: 3px solid black; margin-top: 50px;"> 
+        <!--resim ekleme   width ="yukseklik", height="genişlik" -->
+        <img src="resimler/kahve2.jpg" alt="Bir kahve resmi" width="5%"> 
+    </div>
+
+   
 </body>    <!-- satır boslugu bırakır-->
 
 </html> <!-- / TAG kapatıyor-->
