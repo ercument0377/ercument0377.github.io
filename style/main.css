@@ -5,14 +5,30 @@ a{
     font-size:large;
 }
 li{
-    background-color: rgb(221, 255, 0);
-    
+    background-color: rgb(221, 255, 0);   
 }
 p{
-    color: orange;
+    color:green;
+    background-color: rgb(63, 19, 145);
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 100px;
+    padding-bottom: 15px;
+    border: 5px solid #420b8f00;
+}
+p.ilk{
+   font-size: 18pt;
+    font-weight: bold;  
+    border:3px insert rgb(255,4 ,4,0.878);
 }
 img{
-    width: 32%;
+    width: 5%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 100px;
+    padding-bottom: 15px;
+    border: 5px solid rgb(52, 11, 110);
+    margin-top: 10px;
 }
 h1{
     font-size: 24;
@@ -34,6 +50,27 @@ body{
 }
 .ilkLi
 {
-    font-size: 20%;
+    font-size: 25%;
     font-weight: bold;
+}
+
+p::first-letter{
+    font-size: 26pt;
+}
+
+p::first-line   
+{
+    font-style: italic;
+}
+li:nth-child(odd){
+    color:rgb(123, 255, 0)
+}
+li:nth-child(even){
+    color: rgb(89, 0, 255);
+}
+a:link{
+    color:chocolate
+}
+a:visited{
+    color:darkcyan
 }
