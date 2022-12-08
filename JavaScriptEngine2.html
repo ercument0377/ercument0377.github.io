@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> JavaScript Sayfasi </title>
+    <script>
+        const arabalar = ["SAAB","Volkswagen","Skoda","Peugeot"];
+        function main(){
+           
+            const arabalar = ["Mercedes","Fiat","Audi","BMW"];
+            arabalar[0]="Renault";
+            arabalar.push("Volvo");
+            arabalar.push("Hyundai");
+           document.getElementById("para").innerText= JSON.stringify(arabalar);
+         //   document.getElementById("para").innerText=arabalar;
+           
+            // arabalar = ["Volvo","Renault","Honda"];  // hatalı izin vermez
+            //arabalar = ["GMC","Nissan","Ferrari","Lexus"];
+            const araba ={marka:"Fiat", model:"Egea", yil:2018, renk:"siyah"};
+           // document.getElementById("para").innerText= araba.model;
+           // araba ={marka:"Mercedes", model:"E220", yil:2018, renk:"beyaz"};
+           
+        }
+        function kaydet()
+        {
+            /*
+            var isimDegeri = new String("Burak");
+            var bool = new Boolean(true);
+            var yasDegeri = new Number(37);
+            alttakiler yukardaki gibide yazılabilir ama pek tercih edilmiyor
+            Gradual Typing deniyor buna 
+            */
+            const musteri = {
+                isim:"Burak",
+                soyisim :"Yilmaz",
+                yas: 30,
+                ID: 1110,
+                meslek: "topcu",
+                kimlikYazdir: function(){
+                    return this.isim+ " "+this.soyisim+" ID:"+this.ID;
+                },
+                get ad(){
+                    return this.isim;
+                },
+                get soyad(){
+                    return this.soyisim;
+                },
+                set ad(ad)
+                {
+                    if(ad.length>5)  
+                        this.isim = ad;
+                }
+            };
+          //  document.getElementById("para").innerText= Object.values(musteri);
+          //  document.getElementById("para").innerText= Object.keys(musteri);
+          //  document.getElementById("para").innerText= JSON.stringify(musteri);
+            musteri.ad = "Ramazan";
+            document.getElementById("para").innerText= musteri.ad;
+        }
+        function yazdir()
+        {
+            document.getElementById("para").innerText= arabalar;
+        }
+        class Araba{
+            constructor(marka, model, yil, renk, motorGucu)
+            {
+                this.marka = marka;
+                this.model = model;
+                this.yil = yil;
+                this.renk = renk;
+                this.motorGucu = motorGucu;
+            }
+            arabayiBoya(yeniRenk)
+            {
+                this.renk = yeniRenk;      
+            }
+           
+        }
+        function arabaOlustur()
+        {
+            const benimArabam = new Araba("Audi","A6","2020","Beyaz",2000);
+            benimArabam.arabayiBoya("Lacivert");
+          //  document.getElementById("para").innerText=JSON.stringify(benimArabam);
+              document.getElementById("para").innerText= Object.values(benimArabam);
+         //   document.getElementById("para").innerText = benimArabam.marka+" "+benimArabam.model+
+            " "+benimArabam.renk;
+        }
+
+        const meyveler = new Map([
+          ["elma",6],
+          ["muz,15"],
+          ["portakal",8]
+        ]);
+
+        const sebzeler = new Map();
+        sebzeler.set("domates",7);
+        sebzeler.set("biber",12);
+        sebzeler.set("patates",11);
+
+
+      
+        function sebzeGetir(){
+          meyveler.set("cilek",12);
+        //  document.getElementById("para").innerText=meyveler.get("elma");
+          document.getElementById("para").innerText=meyveler.size+" adet meyve var";
+        //  document.getElementById("para").innerText=meyveler.delete("elma");
+       
+      }
+
+    </script>
+
+<body>
+   <p id="para"> Buradaki Yazi Degisecek</p>
+   <button onclick="yazi()">YAZI</button>
+    <button onclick="main()">MAIN</button>
+    <button onclick="yazdir()">YAZDIR</button>
+    <button onclick="kaydet()">KAYDET</button>
+    <button onclick="arabaOlustur()">ARABA OLUSTUR</button>
+    <button onclick="sebzeGetir()">SEBZE GETIR</button>
+</body>
+
+<script>
+    function yazi(){
+    var metin = "Java cok guzel";
+    document.getElementById("para").innerText=metin.toUpperCase();
+//    document.getElementById("para").innerText=metin.length;
+//    document.getElementById("para").innerText=metin.substring(3,11);
+//    document.getElementById("para").innerText=metin.replace("a","b");
+    
+    }
+
+</script>
+</head>

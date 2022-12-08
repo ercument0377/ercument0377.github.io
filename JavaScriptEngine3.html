@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> JavaScript Sayfasi </title>
+    <script>
+        function Kisi(isim, soyisim, yas, memlekt)
+        {
+            this.ad = isim;
+            this.soyad = soyisim;
+            this.yil = yas;
+            this.sehir = memlekt;
+        }
+// prototype yeni fonksiyon eklemeler yapmamıza yarıyor
+    //    Kisi.prototype.boy = "182";
+
+        Kisi.prototype.plakaUret = function(){
+            return "06"+this.ad.charAt(0)+this.soyad.charAt(0)+this.yil;
+        };
+
+        function main() 
+        {
+        const musteri = new Kisi("Burak","Yilmaz",37,"Ankara");
+        document.getElementById("para").innerText = "Musterinin plakasi : "+musteri.plakaUret();
+        }
+
+        const meyveler = new Map([
+            ["elma",6],
+            ["muz",15],
+            ["portakal",8]
+        ]);
+
+        const sebzeler = new Map();
+        sebzeler.set("domates",7);
+        sebzeler.set("biber",12);
+        sebzeler.set("patates",11);
+
+        function sebzeGetir()
+        {
+         //   meyveler.set("portakal",12);
+          //  document.getElementById("para").innerText = meyveler.get("portakal");
+          //   document.getElementById("para").innerText = meyveler.delete("portakal");
+          //  document.getElementById("para").innerText = meyveler.delete("kivi");
+
+          //  document.getElementById("para").innerText = meyveler.size+" adet farkli meyve var.";
+
+
+        //   meyveler.clear();   // hepsini siler
+        //  document.getElementById("para").innerText = meyveler.size;
+
+
+       //   if(meyveler.has("Portakal"))   // içeriyor mu? varsa kivi yoksa muz getir
+       //   document.getElementById("para").innerText = meyveler.get("kivi");
+       //   else
+       //   document.getElementById("para").innerText = meyveler.get("muz");
+
+/*   // hepsini yazdırır
+       var metin =" ";
+       meyveler.forEach(function(value,key)
+       {
+        metin+=key+" : "+value+ "\n";
+       })
+       document.getElementById("para").innerText = metin;
+*/
+
+/*  // sadece keys yani meyve isimlerini yazdırır
+      var metin =" ";
+       for(const x of meyveler.keys())
+       {
+        metin+=x+"\n";
+       }
+       document.getElementById("para").innerText = metin;
+
+        
+  */
+  
+  
+  /*   // sadece valuesleri yani sayıları(fiyatlarını) verir
+       var metin =" ";
+       for(const x of meyveler.values())
+       {
+        metin+=x+"\n";
+       }
+       document.getElementById("para").innerText = metin;
+    */
+
+    
+        // girilenlerin hepsini arada  virgül olarak getirir
+    var metin =" ";
+       for(const x of meyveler.entries())
+       {
+        metin+=x+"\n";
+       }
+       document.getElementById("para").innerText = metin;
+
+
+
+
+    }
+
+
+    </script>
+
+<body>
+   <p id="para"> Buradaki Yazi Degisecek</p>
+    <button onclick="main()">PLAKA</button>
+    <button onclick="sebzeGetir()">SEBZEGETİR</button>
+
+</body>
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <title> JAvaScript Sayfasi</title>
+        <script type="text/JavaScript" src="script.js">
+
+        </script>
+        <script type="text/JavaScript">
+            document.write("Merhaba!!"+"</br>");
+          //  alert("ilk script");
+          var isim = "Ercument";
+          var yas = 30;
+          var renk = "kirmizi";
+          var oran = 2.4;
+          var ucret = 750;
+
+          function  karsilama() 
+          {
+            document.write("Hosgeldiniz, "+isim+".   Gecelik kalma ucreti :"+ucret+"TL dir."+"</br>");
+          }
+
+          karsilama();
+
+          var ilkSayi = 7;
+          var ikinciSayi =9;
+          var sonuc;
+          function sayilariTopla(sayi1,sayi2) 
+          {
+            alert(sayi1);
+          sonuc = sayi1+sayi2;  
+          }
+          sayilariTopla(4,6);
+          document.write("Toplama isleminin sonucu: "+sonuc+"</br>");
+          sayilariTopla(ilkSayi,ikinciSayi);
+          document.write("Toplama isleminin sonucu: "+sonuc+"</br>");
+
+
+          var icecekler = new Array("Kahve ", "Su ","Cay ","Ihlamur ","MeyveSu "+"</br>");
+          document.write(icecekler+"</br>");
+        //  document.write("Iceceklerimiz: "icecekler[0]+", "+icecekler[1]+", "+ icecekler[2]+
+       //  ","+icecekler[3]+", "+icecekler[4]+",");
+
+          var icecekler = new Array();
+          icecekler[0]="Kahve";
+          icecekler[1]="Su";
+          icecekler[2]="Cay";
+          icecekler[3]="Ihlamur";
+          icecekler[4]="MeyveSu";
+
+          document.writeln(icecekler+"</br>");
+       /*   for(var i=0;i<icecekler.lenght;i++)
+          {
+            document.write(icecekler[i]+"</br>");
+          }
+*/
+          // yukarıdaki ile aynı işlemi verir
+        var i=0;
+        while(i<icecekler.lenght)
+        {
+          document.writeln(icecekler[i]+"</br>");
+        }
+
+
+          var sayi =20;
+          if(sayi>0&&sayi<15)
+          {
+            document.write("OK");
+          }
+          else
+        {
+            document.write("NO");
+        }
+
+        
+
+
+        </script>
+       
+    </head>
+   
+    <body onload="alert('Sayfamiza hosgeldiniz');">
+        <p onclick="alert('Merhaba');"> Tiklayiniz!!</p>
+
+        <p onmouseover="alert('Mause yazinin ustune geldi');"> Tiklayiniz!!</p>
+
+        <p onmouseout="alert('Mause yazının ustunde degil');"> Tiklayiniz!!</p> 
+        
+
+        </script>
+
+        </body>
+        <body>
+          <p> Renk Listesi</p>
+          <ul>
+            <li>Kirmiz</li>
+            <li>Yesil</li>
+            <li>Sari</li>
+          </ul>
+          <script>
+            function gezinti()
+            {
+              var elemanlar = document.body.children;
+              for(var i=0;i<elemanlar.length;i++)
+              {
+                alert(elemanlar[i]);
+              }
+            }
+          </script>
+          <button onclick="gezinti()"> BASLA </button>
+
+        </body>
+        <body>
+            
+            <div id="main" style="height: 100px";></div>
+            <script type="text/javascript">
+                function renkDegistir()
+                {
+                    document.getElementById("main").style.backgroundColor= "yellow";
+                }
+
+            </script>
+            <button onclick="renkDegistir()"> BASLA </button>
+
+        </body>
+
+        <script>
+          function ekle()
+          {
+              var yeniIhtiyac = document.getElementsByName('item')[0].value;
+              var liste = document.getElementById("liste");
+              var yeniListeElemani = document.createElement("li");
+              yeniListeElemani.appendChild(document.createTextNode(yeniIhtiyac));
+              liste.appendChild(yeniListeElemani);
+             
+          }
+      </script>
+  </head>
+  <body>
+     
+      <p> Alisveris Listesi</p>
+      <ul id="liste">
+          <li>Ekmek</li>
+          <li>Sut</li>
+          <li>Yumurta</li>
+          <li>Peynir</li>
+      </ul>
+          <input type="text" name="item">
+          <button onclick="ekle()">Ekle</button>
+     
+     
+  </body>
+        
