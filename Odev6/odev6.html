@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<script>
+    var tiklamaSayisi =3;
+    var seviye = 1;
+
+    function bekleme()
+    {
+        const bekle = setTimeout(konum_degistir, 500-(seviye-1)*100);
+       
+    }
+    function konum_degistir()
+    {
+        document.getElementById("1").innerText="Tiklanma Sayisi: "+ tiklamaSayisi;
+        document.getElementById("2").innerText="Seviye: "+seviye;
+     //   document.getElementById("buton").value="Seviye: "+seviye; // butonun icine seviyesini yazdırır
+        var buton = document.getElementById("buton");
+        buton.style.top =Math.floor(Math.random()*900)+"px";
+        buton.style.left =Math.floor(Math.random()*1700)+"px";
+    }
+    function tikla()
+    {
+        if(tiklamaSayisi>1)
+        {
+            tiklamaSayisi--;
+        }
+        else
+        {
+            alert("tebrikler Seviye "+ seviye+ "'i kazandiniz.");
+            seviye++;
+            tiklamaSayisi=3;
+        }
+    }
+   </script>
+   <body>
+    <p id="1"> </p>
+    <p id="2"> </p>
+
+<form>
+    <input id="buton" style="position:absolute" type="button" value="Tikla!" onmouseover="bekleme(); onclick=tikla();"/>
+</form>
+</body>
+</html>
