@@ -1,106 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Formlar</title>
-    <!--<link rel="stylesheet" href="../style/main.css"/>-->
-</head>
-<body>
-
-    <form action="forms.php"method="POST">
-        <table>
-            <tr>
-                <td>Kullanici Adi:</td>
-                <td><input type="text"  name="kullaniciAdi" autofocus placeholder="kullanici adi giriniz"/></td>
-            </tr>
-            <tr>
+    <head>
+        <meta charset="UTF-8">
+        <title> Formlar </title>
+       
+    </head>
+    <body>
+        <form action="forms.php" method="POST">
+            <table>
+                <tr>
+                    <td>Kullanici Adi:</td>
+                    <td><input type="text" name="kullaniciAdi" size="50" autofocus  placeholder="Kullanici adini giriniz"> </td>
+                   
+                </tr>
+                <tr>
                 <td>Telefon No:</td>
-                <td><input type="text"  name="telNo" required placeholder="TelNo giriniz"/></td>
-            </tr>
-            <tr>
-                <td>e-mail:</td>
-                <td><input type="email"  name="E-posta" required placeholder="e-mail giriniz"/></td>
-            </tr>
-            <tr>
-                <td>Dogum Tarihi:</td>
-                <td><input type="date"  name="dogunTarihi"><td>
-            </tr>
-            <tr>
-                <td>Profil tema rengi seciniz</td>
-                <td><input type="color"  name="tema rengi" value="#0000ff"><td>
-            </tr>
+                    <td><input type="text" name="telNo"  placeholder="Tel No basinda sifir olmadan giriniz" size="30"> </td>
+                </tr>
+                <tr>
+                    <td>Sifre:</td>
+                    <td><input type="password" name="Sifre" /> </td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" name="Eposta" /> </td>
+                </tr>
+                <tr>
+                    <td>Dogum Tarihi:</td>
+                    <td><input type="date" name="dogumTarihi"></td>    
+                </tr>
+                <tr>
+                    <td>Profil tema renginizi secin:</td>
+                    <td><input type="color" name="temaRengi" value="#0000ff"></td>    
+                </tr>
+            </table>
+            <p> Memleket Neresi?</p>
+            <select name="Sehir">
+                <option value="sehir-Ankara">Ankara</option>
+                <option value="sehir-Izmir">Izmir</option>
+                <option value="sehir-Istanbul" selected> İstanbul </option>
+                <option value="sehir-Adana">Adana</option>
+                <option value="sehir-Bursa">Bursa</option>
+                <option value="sehir-Diger">Diger</option>
+            </select><br>
+            <p>Hobileriniz Nelerdir:</p>
+            <table>
+                <tr>
+                    <td>Sinema</td>
+                    <td><input type="checkbox" name="hobiler[]" checked value="Sinema" ></td>
+                </tr>
+                <tr>
+                    <td>Muzik</td>
+                    <td><input type="checkbox" name="hobiler[]" checked value="Muzik"></td>
+                </tr>
+                <tr>
+                    <td>Pastacilik</td>
+                    <td><input type="checkbox" name="hobiler[]" value="Pastacilik"></td>
+                </tr>
+                <tr>
+                    <td>At binme</td>
+                    <td><input type="checkbox" name="hobiler[]" value="At"></td>
+                </tr>
+                <tr>
+                    <td>Video Oyunlari</td>
+                    <td><input type="checkbox" name="hobiler[]" value="Video"></td>
+                </tr>
+                <tr>
+                    <td>Futbol</td>
+                    <td><input type="checkbox" name="hobiler[]" value="Futbol"></td>
+                </tr>
+                <tr>
+                    <td>Basketbol</td>
+                    <td><input type="checkbox" name="hobiler[]" value="Basketbol"></td>
+                </tr>
+            </table>
 
-            <tr>
-                <td>Sifre:</td>
-                <td><input type="password"  name="Sifre" required /><td>
-            </tr>
-        </table>
-        <p>Nerelisiniz?</p>
-        <select name="sehir">
-            <option value="sehir-Ankara">Ankara</option>
-            <option value="sehir-Adana">Adana</option>
-            <option value="sehir-Bursa" selected>Bursa</option>
-            <option value="sehir-Antep">Antep</option>
-            <option value="Diger">Diger</option>
-        </select><br>
-        <p>Hobileriniz nelerdir?:</p>
-        <table>
-            <tr>
-                <td>Sinema</td>
-                <td><input type="checkbox" name="hobiler[]" checked value="Sinema"></td>
-            </tr> 
-       <tr>
-        <td>Musik</td>
-        <td><input type="checkbox" name="hobiler[]" checked value="Muzik"></td>
-       </tr> 
-       <tr>
-        <td>Pastacilik</td>
-        <td><input type="checkbox" name="hobiler[]" value="Pastacilik"></td>
-       </tr> 
-       <tr>
-        <td>At binme</td>
-        <td><input type="checkbox" name="hobiler[]" value="At binme"></td>
-       </tr> 
-       <tr>
-        <td>Futbol</td>
-        <td><input type="checkbox" name="hobiler[]" checked value="Futbol"></td>
-       </tr> 
-       <tr>
-        <td>Basketbol</td>
-        <td><input type="checkbox" name="hobiler[]" value="Basketbol"></td>
-       </tr> 
-        </table>
+            Hangi saatler araliginda gelmeyi planliyorsunuz?
+            <table>
+                <tr>
+                    <td>11:00-15:00</td>
+                    <td><input type="radio" name="saatler" value="11-15" checked></td>
+                </tr>
+                <tr>
+                    <td>15:00-19:00</td>
+                    <td><input type="radio" name="saatler" value="15-19"></td>
+                </tr>
+                <tr>
+                    <td>19:00-23:00</td>
+                    <td><input type="radio" name="saatler" value="19-23"></td>
+                </tr>
+                <tr>
+                    <td>23:00-03:00</td>
+                    <td><input type="radio" name="saatler" value="23-03"></td>
+                </tr>
 
-        Hangi saatler aralıgında gelmek istiyorsunuz
-        <table>
-            <tr>
-                <td>11:00-15:00</td>
-                <td><input type="radio" name="saatler"value="11-15" checked></td>
-            </tr>
-            <tr>
-                <td>15:00-19:00</td>
-                <td><input type="radio" name="saatler" value="15-19"></td>
-            </tr>
-            <tr>
-                <td>19:00-23:00</td>
-                <td><input type="radio" name="saatler" value="19-23"></td>
-            </tr>
-            <tr>
-                <td>23:00-03:00</td>
-                <td><input type="radio" name="saatler" value="23-03"></td>
-            </tr>
-        </table>
-
-        <p>lutfen dusuncelerinisi belirtinis</p>
-        <textarea rows="4" cols="60" name="Yorumlar" placeholder="Telefon numaranizi 
-        girdikten sonre Yorumlarinizi belirtiniz" maxlength="250"  minlength="5"></textarea><br>
-
-
-        
-        <input type="submit" value="kayıtOl"/>
-        <input type ="reset" value="tercihleri sil"/>
-
-      </form>   
-
-</body> 
+            </table>
+            <p>Lutfen eklemek istediginiz bir sey varsa asagiya yaziniz.</p>
+            <textarea rows="4" cols="60" name="yorumlar" placeholder="Telefon numaranizi girdikten sonra yorumlarinizi ekleyebilrisiniz."
+            maxlength="250" minlength="20" ></textarea></br>
+            <input type="submit" value="Kayit Ol"/>
+            <input type="reset" value="Tercihleri Sil">
+        </form>
+    </body>
 </html>

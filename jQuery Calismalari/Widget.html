@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+	<link href="jquery-ui.css" rel="stylesheet">
+    <style>
+    .ui-state-active,
+    .ui-widget-content .ui-state-active,
+    .ui-widget-header .ui-state-active,
+    a.ui-button:active,
+    .ui-button:active,
+    .ui-button.ui-state-active:hover {
+	border: 1px solid #2f00ff;
+	background: #51ff00;
+	font-weight: bold;
+	color: #d81010;
+}
+    </style>
+	
+    <body> 
+        <h2 class="demoHeaders">Accordion</h2>
+<div id="accordion">
+	<h3>First</h3>
+	<div>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+	<h3>Second</h3>
+	<div>Phasellus mattis tincidunt nibh.</div>
+	<h3>Third</h3>
+	<div>Nam dui erat, auctor a, dignissim quis.</div>
+    <h3>Fourty</h3>
+	<div>Aferim sana, ekledin yazıyı.</div>
+</div>
+<h2 class="demoHeaders">Autocomplete</h2>
+<div>
+	<input id="autocomplete" title="Memleketinizi yazınız">
+</div>
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script src="script.js"></script>
+    </body>
+	<h2 class="demoHeaders">Controlgroup</h2>
+<fieldset>
+	<legend>Rental Car</legend>
+	<div id="controlgroup">
+		<select id="car-type">
+			<option>Compact car</option>
+			<option>Midsize car</option>
+			<option>Full size car</option>
+			<option>SUV</option>
+			<option>Luxury</option>
+			<option>Truck</option>
+			<option>Van</option>
+		</select>
+		<label for="transmission-standard">Standard</label>
+		<input type="radio" name="transmission" id="transmission-standard">
+		<label for="transmission-automatic">Automatic</label>
+		<input type="radio" name="transmission" id="transmission-automatic">
+		<label for="insurance">Insurance</label>
+		<input type="checkbox" name="insurance" id="insurance">
+		<label for="horizontal-spinner" class="ui-controlgroup-label"># of cars</label>
+		<input id="horizontal-spinner" class="ui-spinner-input">
+		<button>Book Now!</button>
+	</div>
+</fieldset>
+
+<h2 class="demoHeaders">Tabs</h2>
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">First</a></li>
+		<li><a href="#tabs-2">Second</a></li>
+		<li><a href="#tabs-3">Third</a></li>
+	</ul>
+	<div id="tabs-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+	<div id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</div>
+	<div id="tabs-3">Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</div>
+</div>
+
